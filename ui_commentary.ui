@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>commentary</class>
+ <widget class="QDockWidget" name="commentary">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>297</width>
+    <height>185</height>
+   </rect>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <property name="allowedAreas">
+   <set>Qt::RightDockWidgetArea</set>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Commentary</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QWidget" name="gridWidget_5" native="true">
+      <layout class="QGridLayout" name="gridLayout_13">
+       <property name="spacing">
+        <number>1</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QTextBrowser" name="brsCommentary"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

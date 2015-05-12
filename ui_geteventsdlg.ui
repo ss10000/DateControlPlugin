@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>getEventsDialog</class>
+ <widget class="QDialog" name="getEventsDialog">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>283</width>
+    <height>278</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string extracomment="Gets date">Get date range &amp; list</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QFormLayout" name="formLayout">
+     <item row="1" column="0" colspan="2">
+      <widget class="QTableWidget" name="tblLayers">
+       <property name="toolTip">
+        <string>select the layers to collect the dates from.</string>
+       </property>
+       <property name="rowCount">
+        <number>8</number>
+       </property>
+       <property name="columnCount">
+        <number>3</number>
+       </property>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <row/>
+       <column>
+        <property name="text">
+         <string>Layer name</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Start dt</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>End dt</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="standardButtons">
+        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Select the layers to collect dates from</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>getEventsDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>89</x>
+     <y>245</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>141</x>
+     <y>146</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>getEventsDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>89</x>
+     <y>245</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>141</x>
+     <y>146</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
