@@ -1,0 +1,39 @@
+# This file contains metadata for your plugin. Beginning
+# with version 1.8 this is the preferred way to supply information about a
+# plugin. The current method of embedding metadata in __init__.py will
+# be supported until version 2.0
+
+# This file should be included when you package your plugin.
+
+# Mandatory items:
+
+
+[general]
+name=DateControl
+qgisMinimumVersion=2.0
+description=Displays vector data within specified date range
+about=Displays vector data within specified date.  The range may move backwards or forwards by a specified amount at regular intervals or it may be set manually.  Each record in the vector data may have a start and end date or a single date.  BC dates are allowed.  This plugin is suitable for historical reconstructions.
+version=1.3
+author=S Sinclair
+email=ss10000@cam.ac.uk
+
+# end of mandatory metadata
+
+# Optional items:
+
+# Uncomment the following line and add your changelog entries:
+# changelog=
+
+# tags are comma separated with spaces allowed
+tags=
+
+homepage=https://github.com/ss10000/DateControlPlugin
+tracker=https://github.com/ss10000/DateControlPlugin/issue
+repository=https://github.com/ss10000/DateControlPlugin
+icon=icon.png
+# experimental flag
+experimental=True
+
+# deprecated flag (applies to the whole plugin, not just a single version
+deprecated=False
+
